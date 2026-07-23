@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ordner-Index U/Q/T/H/B</title>
+<title>Ordner-Index U/Q/T/H/B/s/x/V/X</title>
 
 <style>
 body { font-family: Arial; background:#111; color:#eee; padding:20px; }
@@ -16,16 +16,27 @@ li { padding:4px 0; border-bottom:1px solid #333; }
 </head>
 
 <body>
-<h1>Index – U / Q / T / H / B</h1>
-<p>Automatische Anzeige der Ordner (X und Y werden ignoriert).</p>
+<h1>Index – U / Q / T / H / B / s / x / V / X</h1>
+<p>Automatische Anzeige aller EVO‑Ordner.</p>
 
 <script>
-const folders = ["U", "Q", "T", "H", "B"];
+// ⭐ EINZIGER gültiger Ordner‑Block
+const folders = [
+  "U",   // Universum
+  "Q",   // Quelle
+  "T",   // Zeit
+  "H",   // Halt
+  "B",   // BIOS
+  "s",   // Struktur / System / Seele
+  "x",   // Hyperraum
+  "V",   // Vektor / Verschiebung / Verbindung
+  "X"    // Unendlichkeits-Ebene
+];
 
 async function scanFolder(folder) {
   try {
     const res = await fetch(folder + "/");
-    if (!res.ok) return; // Ordner existiert nicht
+    if (!res.ok) return;
 
     const html = await res.text();
     const parser = new DOMParser();
