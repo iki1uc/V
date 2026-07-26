@@ -1,5 +1,13 @@
-# V.room
-ROOM: V
-TYPE: VECTOR-ROOM
-CHAIN: X → PI → Z → V
-SLOT: 8
+CORE = V
+VERSION = 1.0
+CODE = RAW
+AXIS = V-Axis (X → PI → Z → V)
+FORM = Vektor / Verschiebung / Verbindung
+GEOMETRIE = Linie → Achse → Vektorraum
+FREQUENZ = 144 Hz (X+PI+Z+V)
+EBENE = 16D
+STATUS = Aktiv
+
+V = Vektorraum
+V = Verbindungskern
+V = Übergang zur TMP-Matrix
