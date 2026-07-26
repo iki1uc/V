@@ -1,7 +1,75 @@
-<!-- index.html -->
-<html>
-<head><title>iki1uc STATION</title></head>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>STATION – Vektorbewegung</title>
+
+<style>
+body {
+    background:#000;
+    color:#0f0;
+    font-family:Consolas, monospace;
+    padding:20px;
+}
+
+/* Anzeige-Box */
+#stationBox {
+    width:300px;
+    height:300px;
+    border:2px solid #0f0;
+    border-radius:10px;
+    position:relative;
+    margin:auto;
+    margin-top:40px;
+}
+
+/* V-Punkt */
+#vPoint {
+    width:20px;
+    height:20px;
+    background:#0f0;
+    border-radius:50%;
+    position:absolute;
+    left:140px;
+    top:140px;
+    animation:moveV 6s infinite linear;
+}
+
+/* Animation: Nord → Süd → West ↔ Ost */
+@keyframes moveV {
+
+    /* Start: Mitte */
+    0%   { top:140px; left:140px; }
+
+    /* Nord */
+    15%  { top:40px;  left:140px; }
+
+    /* Süd */
+    30%  { top:240px; left:140px; }
+
+    /* Mitte */
+    45%  { top:140px; left:140px; }
+
+    /* West */
+    60%  { top:140px; left:40px; }
+
+    /* Ost */
+    75%  { top:140px; left:240px; }
+
+    /* Mitte */
+    100% { top:140px; left:140px; }
+}
+</style>
+</head>
+
 <body>
-STATION ACTIVE
+
+<h2>STATION – Aktiv</h2>
+<p>Vektorbewegung: Nord → Süd → West ↔ Ost</p>
+
+<div id="stationBox">
+    <div id="vPoint"></div>
+</div>
+
 </body>
 </html>
