@@ -1,40 +1,27 @@
 # V – Vektor / Verschiebung / Verbindung
 
-## Zweck
-V ist die vierte Achse der Unendlichkeits‑Formel.
-Sie bildet die Verschiebung, den Vektor und die Verbindung.
+V ist die vierte Achse der Unendlichkeits‑Formel:
 
 X → PI → Z → V
 
----
+V bildet:
+- die Verschiebung,
+- den Vektor,
+- die Verbindung zwischen Raum und Operator,
+- die Brücke zur TMP‑Matrix,
+- den HUB6D‑Slot16,
+- den TOR‑WARP‑Vektorpfad.
 
-## Identität
-- CORE: V
-- VERSION: 1.0
-- CODE: RAW
-- AXIS: V‑Axis
-- EBENE: ∞4
-- FREQUENZ: 7070 Hz
-- GEOMETRIE: Vektor‑Strahl
-- UNSTERBLICH: Unendlichkeits‑Formel
-- STATUS: Aktiv
-
----
-
-## Funktionen
-- Vektorbewegung
-- Verschiebung im Unendlichkeitsraum
-- Verbindung aller Unendlichkeits‑Achsen
-- Übergang zur xµz‑Achse
-
----
-
-## Dateien
-- index.html – Geometrie & Frequenz
-- ID.html – Achsen‑Identität
-
----
-
-## Hinweis
-V ist die Bewegungsachse der Unendlichkeit.
-
+Minimalstruktur (Pflicht):
+- V.room
+- 81.room
+- s.room
+- operator.tmp
+- morph.tmp
+- error.tmp
+- help.tmp
+- tmp.a
+- tmp.e
+- tmp.s
+- index.html
+- ID.html
