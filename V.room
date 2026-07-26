@@ -1,14 +1,5 @@
-V = {
-  axis: 4,
-  type: "Vektor / Verschiebung / Verbindung",
-  chain: ["X", "PI", "Z", "V"],
-  purpose: [
-    "Vektorbewegung",
-    "Raumverschiebung",
-    "Operator-Verbindung",
-    "TMP-Brücke",
-    "HUB6D-Slot16",
-    "TOR-WARP-Vektorpfad"
-  ]
-}
-
+# V.room
+ROOM: V
+TYPE: VECTOR-ROOM
+CHAIN: X → PI → Z → V
+SLOT: 8
