@@ -1,69 +1,7 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ordner-Index U/Q/T/H/B/s/x/V/X</title>
-
-<style>
-body { font-family: Arial; background:#111; color:#eee; padding:20px; }
-h2 { color:#6cf; margin-top:30px; }
-a { color:#6cf; text-decoration:none; }
-a:hover { text-decoration:underline; }
-ul { list-style:none; padding:0; }
-li { padding:4px 0; border-bottom:1px solid #333; }
-</style>
-</head>
-
+<!-- index.html -->
+<html>
+<head><title>iki1uc STATION</title></head>
 <body>
-<h1>Index – U / Q / T / H / B / s / x / V / X</h1>
-<p>Automatische Anzeige aller EVO‑Ordner.</p>
-
-<script>
-// ⭐ EINZIGER gültiger Ordner‑Block
-const folders = [
-  "U",   // Universum
-  "Q",   // Quelle
-  "T",   // Zeit
-  "H",   // Halt
-  "B",   // BIOS
-  "s",   // Struktur / System / Seele
-  "x",   // Hyperraum
-  "V",   // Vektor / Verschiebung / Verbindung
-  "X"    // Unendlichkeits-Ebene
-];
-
-async function scanFolder(folder) {
-  try {
-    const res = await fetch(folder + "/");
-    if (!res.ok) return;
-
-    const html = await res.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, "text/html");
-    const links = [...doc.querySelectorAll("a")];
-
-    const section = document.createElement("div");
-    section.innerHTML = `<h2>${folder}</h2><ul></ul>`;
-    const ul = section.querySelector("ul");
-
-    links.forEach(link => {
-      const name = link.textContent.trim();
-      if (name !== "../") {
-        const li = document.createElement("li");
-        li.innerHTML = `<a href="${folder}/${link.getAttribute("href")}">${name}</a>`;
-        ul.appendChild(li);
-      }
-    });
-
-    document.body.appendChild(section);
-  } catch (e) {
-    // Ordner nicht vorhanden → ignorieren
-  }
-}
-
-folders.forEach(scanFolder);
-</script>
-
+STATION ACTIVE
 </body>
 </html>
