@@ -1,1 +1,5 @@
+# tmp.e
+TMP: E
+TYPE: SCALE
+SLOT: 18
 
