@@ -1,18 +1,31 @@
 # V – Vektor / Verschiebung / Verbindung
 
 V ist die vierte Achse der Unendlichkeits‑Formel:
-
 X → PI → Z → V
 
-V bildet:
-- die Verschiebung,
-- den Vektor,
-- die Verbindung zwischen Raum und Operator,
-- die Brücke zur TMP‑Matrix,
-- den HUB6D‑Slot16,
-- den TOR‑WARP‑Vektorpfad.
+## Achsen im V-System
 
-Minimalstruktur (Pflicht):
+### 1. s-Achse (27D)
+- Struktur / System / Seele
+- Quadrat → Pentagramm → Systemfeld
+- Frequenz: 444 Hz (3×9)
+- Übergang zur x-Achse
+- Datei: s.room
+
+### 2. 81-Achse (81D)
+- Seelenraum / Hyperstruktur
+- 1 → 3 → 9 → 27 → 81
+- Frequenz: 444 Hz (3×9×27)
+- Verbindung zu U
+- Datei: 81.room
+
+### 3. V-Achse (16D)
+- Vektor / Verschiebung / Verbindung
+- Übergang zur TMP-Matrix
+- HUB6D Slot16
+- Datei: V.room
+
+## Minimalstruktur (Pflicht)
 - V.room
 - 81.room
 - s.room
